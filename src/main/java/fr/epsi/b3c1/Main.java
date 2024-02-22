@@ -115,9 +115,6 @@ public class Main {
 
         em.getTransaction().commit();
 
-        em.close();
-        emf.close();
-
         String petStoreName = "Petshop";
         Query query = em.createQuery("SELECT a FROM Animal a WHERE a.petStore.name = :name");
         query.setParameter("name", petStoreName);
@@ -126,6 +123,9 @@ public class Main {
         for (Animal animal : animals) {
             System.out.println(animal);
         }
+
+        em.close();
+        emf.close();
 
 
 
