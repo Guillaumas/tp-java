@@ -9,16 +9,16 @@ modélisation JPA et notamment l’utilisation des relations d’héritage
 
 ### Travail à faire :
 
-- Projet : Création d’un projet « multi-couches » avec une bonne isolation (package, …)
+- **Projet** : Création d’un projet « multi-couches » avec une bonne isolation (package, …)
 
 
-- Base de données : Création d’une base de données appelée : petstore
+- **Base de données** : Création d’une base de données appelée : petstore
     - Créer une nouvelle persistence-unit dans persistence.xml pour y accéder
     - Mettre en place le paramétrage nécessaire pour que l’application prenne la main sur
       la création du schéma de base de données
 
 
-- Mapping 10pts : Mettre en place le mapping des entités JPA à l’aide des annotations vues
+- **Mapping** <u>10pts</u> : Mettre en place le mapping des entités JPA à l’aide des annotations vues
     - Créer les entités JPA du diagramme de classes fourni (mapper tous les champs de
       toutes les classes avec les tables correspondantes en base de données sans oublier
       les types énumérés)
@@ -28,14 +28,14 @@ modélisation JPA et notamment l’utilisation des relations d’héritage
       classe / Joined »
 
 
-- Manipulation 5pts : Mettre en place une série d’instructions pour créer et requêter les
+- **Manipulation** <u>5pts</u> : Mettre en place une série d’instructions pour créer et requêter les
   éléments en base de données
     - Insérer au moins trois enregistrements dans chacune des tables via EntityManager
     - Réaliser une requête qui permet d’extraire tous les animaux d’une animalerie
       donnée
 
 
-- Qualité du livrable 5pts :
+- **Qualité du livrable** <u>5pts</u> :
     - Commentaires, absence de codes morts, consignes d’éxécution, etc
     - Ajouter le compte @ssylla en tant que collaborateur sur votre dépôt Git sur GitHub,
       GitLab ou Bitbucket
