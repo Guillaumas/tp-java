@@ -6,6 +6,7 @@ import java.util.Date;
 import jakarta.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Animal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
