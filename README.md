@@ -40,3 +40,6 @@ modélisation JPA et notamment l’utilisation des relations d’héritage
     - Ajouter le compte @ssylla en tant que collaborateur sur votre dépôt Git sur GitHub,
       GitLab ou Bitbucket
     - Pensez à ajouter un readMe pour les éventuelles consignes.
+
+
+### Pour tester, il suffit de lancer le main de la classe Main.java

@@ -7,9 +7,10 @@ import fr.epsi.b3c1.Enums.*;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.List;
 
 public class Main {
 
@@ -95,7 +96,7 @@ public class Main {
         Fish fish2 = new Fish.Builder()
                 .withLivingEnv(FishLiveEnv.SALTWATER)
                 .build();
-        fish2.setBirth(LocalDate.of(2003,7,4));
+        fish2.setBirth(LocalDate.of(2003, 7, 4));
         fish2.setColor("Green");
         fish2.setPetStore(petStore2);
 
@@ -116,5 +117,18 @@ public class Main {
 
         em.close();
         emf.close();
+
+        String petStoreName = "Petshop";
+        Query query = em.createQuery("SELECT a FROM Animal a WHERE a.petStore.name = :name");
+        query.setParameter("name", petStoreName);
+        List<Animal> animals = query.getResultList();
+
+        for (Animal animal : animals) {
+            System.out.println(animal);
+        }
+
+
+
+
     }
 }
